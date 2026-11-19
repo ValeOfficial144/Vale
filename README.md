@@ -14,4 +14,4 @@ Then build with `VITE_WISP_URL=wss://your-wisp-host/`, or override it per browse
 
 
 
-<small>vale reuses code from singularity v2</small>
+ Disclaimer: **vale reuses code from singularity v2**
