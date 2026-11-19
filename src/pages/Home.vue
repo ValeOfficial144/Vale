@@ -14,7 +14,7 @@ function submitSearch() {
 <template>
     <div class="homePage">
         <div class="titleArea">
-            <h1 class="siteTitle">Singularity <span>V2</span></h1>
+            <h1 class="siteTitle">Vale</h1>
         </div>
         <form id="homepageSearchbar" class="homepageSearchbar" @submit.prevent="submitSearch">
             <input id="browserAddress" v-model="search" type="text" placeholder="Search the web..." />
