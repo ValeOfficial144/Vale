@@ -8,7 +8,7 @@ function normalize(raw: string) {
   if (!text) return '';
   if (/^https?:\/\//i.test(text)) return text;
   if (!/\s/.test(text) && /^[^.\s]+\.[^\s]{2,}/.test(text)) return 'https://' + text;
-  return 'https://duckduckgo.com/?q=' + encodeURIComponent(text);
+  return 'https://search.brave.com/search?q=' + encodeURIComponent(text);
 }
 
 function unwrap(raw: string) {
