@@ -17,7 +17,7 @@ function submitSearch() {
             <h1 class="siteTitle">Vale</h1>
         </div>
         <form id="homepageSearchbar" class="homepageSearchbar" @submit.prevent="submitSearch">
-            <input id="browserAddress" v-model="search" type="text" placeholder="Search the web..." />
+            <input id="browserAddress" v-model="search" type="text" placeholder="Search The Web..." />
         </form>
         <a
             class="discordInvite"
