@@ -19,7 +19,7 @@
       "enable": true,
       "direction": "bottom",
       "outModes": { "default": "out" },
-      "speed": 2,
+      "speed": 1,
       "size": true,
       "angle": 30
     },
