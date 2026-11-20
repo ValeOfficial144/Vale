@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import { GamepadDirectional } from '@lucide/vue';
+import { Gamepad } from '@lucide/vue';
 import { House } from '@lucide/vue';
-import { Globe } from '@lucide/vue';
+import { Search } from '@lucide/vue';
 import { Bot } from '@lucide/vue';
-import { MessageSquare } from '@lucide/vue';
+import { MessageCircle } from '@lucide/vue';
 import { Settings } from '@lucide/vue';
 import { Cloud } from '@lucide/vue';
-import { EighthNote } from '@lucide/vue';
-import { Play } from '@lucide/vue';
-import { MonitorCloud } from '@lucide/vue';
+import { SixteenthNote } from '@lucide/vue';
+import { Tv } from '@lucide/vue';
+import { Monitor } from '@lucide/vue';
 import { RouterLink } from 'vue-router';
 
 </script>
