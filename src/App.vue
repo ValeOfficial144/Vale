@@ -15,19 +15,19 @@ import { RouterView } from 'vue-router';
 </template>
 <style scoped>
 :global(:root) {
-  --sg-page-bg: #151329;
-  --sg-surface: #1b1830;
-  --sg-surface-raised: #211c35;
-  --sg-surface-hover: #44375f;
-  --sg-border: #44375f;
-  --sg-accent: #6f53b5;
-  --sg-accent-soft: #a58fe3;
-  --sg-accent-light: #cbbaf5;
+  --sg-page-bg: #170d07;
+  --sg-surface: #22140b;
+  --sg-surface-raised: #2b1a0e;
+  --sg-surface-hover: #5a3416;
+  --sg-border: #5a3416;
+  --sg-accent: #e8630a;
+  --sg-accent-soft: #ff9a4d;
+  --sg-accent-light: #ffc08a;
   --sg-text: #ffffff;
-  --sg-text-soft: #d8caf8;
-  --sg-text-muted: #a58fe3;
-  --sg-shadow-soft: rgb(8 6 22 / 24%);
-  --sg-shadow-strong: rgb(8 6 22 / 48%);
+  --sg-text-soft: #ffd9b8;
+  --sg-text-muted: #d9955c;
+  --sg-shadow-soft: rgb(24 10 2 / 24%);
+  --sg-shadow-strong: rgb(24 10 2 / 48%);
 }
 
 :global(body) {
