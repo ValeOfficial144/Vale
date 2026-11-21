@@ -104,7 +104,7 @@ function fullscreen() {
         v-model="address"
         class="browserAddress"
         type="text"
-        placeholder="Access Freedom..."
+        placeholder="Search the web or type a URL..."
         aria-label="Address"
         autocomplete="off"
         spellcheck="false"
@@ -119,7 +119,7 @@ function fullscreen() {
       <iframe ref="iframe" class="browserFrame" :class="{ hidden: !started }" title="Browser" @load="onLoad"></iframe>
       <div v-if="!started" class="browserEmpty">
         <p v-if="status === 'starting'">Starting the proxy...</p>
-        <p v-else-if="status === 'ready'">Access Freedom...</p>
+        <p v-else-if="status === 'ready'">Type a URL or search above.</p>
         <template v-else>
           <p class="browserError">Proxy failed to start.</p>
           <p class="browserErrorDetail">{{ error }}</p>
