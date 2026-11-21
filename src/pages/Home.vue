@@ -15,10 +15,13 @@ const ribbonOptions = {
     fpsLimit: 45,
     particles: {
         number: {
-            value: 12,
-            density: { enable: true }
+            value: 45,
+            density: { enable: false }
         },
-        color: { value: ['#ff5a00', '#5c2008'] },
+        paint: [
+            { fill: { enable: true, color: { value: '#ff5a00' } } },
+            { fill: { enable: true, color: { value: '#5c2008' } } }
+        ],
         shape: {
             type: 'ribbon',
             options: {
@@ -34,8 +37,12 @@ const ribbonOptions = {
             value: { min: 0.5, max: 1 }
         },
         size: {
-            value: { min: 40, max: 120 }
+            value: { min: 25, max: 70 }
         },
+        roll: { enable: false },
+        tilt: { enable: false },
+        wobble: { enable: false },
+        rotate: { value: 0, animation: { enable: false } },
         move: {
             enable: true,
             speed: { min: 0.3, max: 0.8 },
