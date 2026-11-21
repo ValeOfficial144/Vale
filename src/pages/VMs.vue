@@ -181,7 +181,7 @@ onBeforeUnmount(() => {
     </div>
 
     <div class="vmSide">
-      <button type="button" class="vmSideBtn" aria-label="Fullscreen" @click="FullScreen">
+      <button type="button" class="vmSideBtn" aria-label="Fullscreen" @click="fullscreen">
         <Maximize :size="20" />
       </button>
       <button type="button" class="vmSideBtn" aria-label="Reload" @click="reload">
