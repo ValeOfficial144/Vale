@@ -672,21 +672,21 @@ onUnmounted(() => {
 
 <style scoped>
 .watchRoot {
-  --bh-bg: #0f0a1a;
-  --bh-panel: #1a1229;
-  --bh-card: #241a36;
-  --bh-border: #3d2a55;
-  --bh-input: #241a36;
-  --bh-input-border: #3d2a55;
-  --bh-muted: #b8a9c9;
-  --bh-text: #f0e6ff;
-  --bh-accent: #c084fc;
-  --bh-accent-hover: #d8b4fe;
-  --bh-cyan: #a78bfa;
-  --bh-line: #a78bfa;
-  --sg-page-bg: #0f0a1a;
+  --bh-bg: #170d07;
+  --bh-panel: #22140b;
+  --bh-card: #2b1a0e;
+  --bh-border: #5a3416;
+  --bh-input: #2b1a0e;
+  --bh-input-border: #5a3416;
+  --bh-muted: #d9955c;
+  --bh-text: #fff4ea;
+  --bh-accent: #ff9a4d;
+  --bh-accent-hover: #ffc08a;
+  --bh-cyan: #ff9a4d;
+  --bh-line: #ff9a4d;
+  --sg-page-bg: #170d07;
   --sg-shadow-soft: rgba(0, 0, 0, 0.35);
-  --sg-accent: #7c3aed;
+  --sg-accent: #e8630a;
 
   position: relative;
   display: flex;
@@ -739,9 +739,9 @@ onUnmounted(() => {
   pointer-events: auto;
 }
 .playerExit {
-  background: #1a1229;
-  border: 1px solid #c084fc;
-  color: #f0e6ff;
+  background: #22140b;
+  border: 1px solid #ff9a4d;
+  color: #fff4ea;
   padding: 8px 16px;
   border-radius: 4px;
   font-size: 13px;
@@ -752,8 +752,8 @@ onUnmounted(() => {
   transition: background 0.15s, color 0.15s;
 }
 .playerExit:hover {
-  background: #c084fc;
-  color: #0f0a1a;
+  background: #ff9a4d;
+  color: #170d07;
 }
 
 .watchPage {
