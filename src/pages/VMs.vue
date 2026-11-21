@@ -293,7 +293,7 @@ onBeforeUnmount(() => {
 .vmCardShade {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgb(8 6 22 / 90%) 0%, rgb(8 6 22 / 0%) 60%);
+  background: linear-gradient(to top, rgb(24 10 2 / 90%) 0%, rgb(24 10 2 / 0%) 60%);
 }
 
 .vmCardTitle {
