@@ -6,59 +6,6 @@ import { siDiscord } from 'simple-icons';
 const router = useRouter();
 const search = ref('');
 
-const ribbonOptions = {
-    key: 'ribbon',
-    name: 'Shape Ribbon',
-    fullScreen: { enable: true, zIndex: -1 },
-    background: { color: { value: '#170d07' } },
-    detectRetina: false,
-    fpsLimit: 45,
-    particles: {
-        number: {
-            value: 45,
-            density: { enable: false }
-        },
-        paint: [
-            { fill: { enable: true, color: { value: '#ff5a00' } } },
-            { fill: { enable: true, color: { value: '#5c2008' } } }
-        ],
-        shape: {
-            type: 'ribbon',
-            options: {
-                ribbon: {
-                    points: 12,
-                    waveAmplitude: 0.35,
-                    waveFrequency: 1.8,
-                    thickness: 0.45
-                }
-            }
-        },
-        opacity: {
-            value: { min: 0.5, max: 1 }
-        },
-        size: {
-            value: { min: 25, max: 70 }
-        },
-        roll: { enable: false },
-        tilt: { enable: false },
-        wobble: { enable: false },
-        rotate: { value: 0, animation: { enable: false } },
-        move: {
-            enable: true,
-            speed: { min: 0.3, max: 0.8 },
-            outModes: 'out'
-        }
-    },
-    interactivity: {
-        events: {
-            onClick: { enable: true, mode: 'repulse' }
-        },
-        modes: {
-            repulse: { distance: 400, duration: 0.4 }
-        }
-    }
-};
-
 function submitSearch() {
     const q = search.value.trim();
     if (q) router.push({ name: 'browser', query: { q } });
@@ -74,7 +21,6 @@ onUnmounted(() => {
 </script>
 <template>
     <div class="homePage">
-        <vue-particles id="homeRibbon" :options="ribbonOptions" />
         <div class="titleArea">
             <h1 class="siteTitle">Vale</h1>
         </div>
@@ -108,10 +54,6 @@ onUnmounted(() => {
     --sg-text-muted: #d9955c;
     --sg-shadow-soft: rgb(24 10 2 / 24%);
     --sg-shadow-strong: rgb(24 10 2 / 48%);
-  }
-
-  :global(body.homeOrange .bg) {
-    display: none;
   }
 
   .homePage {
