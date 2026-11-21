@@ -6,43 +6,48 @@ import { siDiscord } from 'simple-icons';
 const router = useRouter();
 const search = ref('');
 
-const nasaOptions = {
-    key: 'nasa',
-    name: 'NASA',
+const ribbonOptions = {
+    key: 'ribbon',
+    name: 'Shape Ribbon',
     fullScreen: { enable: true, zIndex: -1 },
     background: { color: { value: '#170d07' } },
     detectRetina: false,
     fpsLimit: 45,
     particles: {
         number: {
-            value: 160,
+            value: 12,
             density: { enable: true }
         },
-        color: { value: '#ffffff' },
-        shape: { type: 'circle' },
+        color: { value: ['#ff5a00', '#5c2008'] },
+        shape: {
+            type: 'ribbon',
+            options: {
+                ribbon: {
+                    points: 12,
+                    waveAmplitude: 0.35,
+                    waveFrequency: 1.8,
+                    thickness: 0.45
+                }
+            }
+        },
         opacity: {
-            value: { min: 0.1, max: 1 },
-            animation: { enable: true, speed: 1, sync: false }
+            value: { min: 0.5, max: 1 }
         },
         size: {
-            value: { min: 1, max: 3 }
+            value: { min: 40, max: 120 }
         },
         move: {
             enable: true,
-            speed: { min: 0.1, max: 1 }
+            speed: { min: 0.3, max: 0.8 },
+            outModes: 'out'
         }
     },
     interactivity: {
         events: {
-            onHover: { enable: true, mode: 'bubble' },
             onClick: { enable: true, mode: 'repulse' }
         },
         modes: {
-            grab: { distance: 400, links: { opacity: 1 } },
-            bubble: { distance: 250, size: 0, duration: 2, opacity: 0 },
-            repulse: { distance: 400, duration: 0.4 },
-            push: { quantity: 4 },
-            remove: { quantity: 2 }
+            repulse: { distance: 400, duration: 0.4 }
         }
     }
 };
@@ -62,7 +67,7 @@ onUnmounted(() => {
 </script>
 <template>
     <div class="homePage">
-        <vue-particles id="homeNasa" :options="nasaOptions" />
+        <vue-particles id="homeRibbon" :options="ribbonOptions" />
         <div class="titleArea">
             <h1 class="siteTitle">Vale</h1>
         </div>
