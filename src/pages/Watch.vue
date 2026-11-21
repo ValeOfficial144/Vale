@@ -329,7 +329,7 @@ async function applyFilters() {
   }
 }
 
-async function switchTab(next: 'Movies' | 'Shows') {
+async function switchTab(next: 'movies' | 'shows') {
   if (tab.value === next) return;
   tab.value = next;
   selectedGenre.value = '';
