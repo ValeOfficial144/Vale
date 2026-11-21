@@ -22,7 +22,7 @@ function submitSearch() {
         </form>
         <a
             class="discordInvite"
-            href="https://discord.gg/gCVYYC9pt6"
+            href="https://discord.gg/KaBUwpjZYD"
             target="_blank"
         >
             <svg class="discordIcon" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
