@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, onUnmounted, ref } from 'vue';
+import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 import { siDiscord } from 'simple-icons';
 
@@ -11,13 +11,6 @@ function submitSearch() {
     if (q) router.push({ name: 'browser', query: { q } });
 }
 
-onMounted(() => {
-    document.body.classList.add('homeOrange');
-});
-
-onUnmounted(() => {
-    document.body.classList.remove('homeOrange');
-});
 </script>
 <template>
     <div class="homePage">
@@ -40,22 +33,6 @@ onUnmounted(() => {
     </div>
 </template>
 <style scoped>
-  :global(body.homeOrange) {
-    --sg-page-bg: #170d07;
-    --sg-surface: #22140b;
-    --sg-surface-raised: #2b1a0e;
-    --sg-surface-hover: #5a3416;
-    --sg-border: #5a3416;
-    --sg-accent: #e8630a;
-    --sg-accent-soft: #ff9a4d;
-    --sg-accent-light: #ffc08a;
-    --sg-text: #ffffff;
-    --sg-text-soft: #ffd9b8;
-    --sg-text-muted: #d9955c;
-    --sg-shadow-soft: rgb(24 10 2 / 24%);
-    --sg-shadow-strong: rgb(24 10 2 / 48%);
-  }
-
   .homePage {
     position: relative;
     display: grid;
