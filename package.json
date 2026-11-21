@@ -1,5 +1,5 @@
 {
-  "name": "singularity",
+  "name": "vale",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -10,8 +10,10 @@
   },
   "dependencies": {
     "@lucide/vue": "^1.61.0",
-    "@tsparticles/slim": "^3.9.1",
-    "@tsparticles/vue3": "^3.0.1",
+    "@tsparticles/engine": "^4.0.0",
+    "@tsparticles/shape-ribbon": "^4.0.0",
+    "@tsparticles/slim": "^4.0.0",
+    "@tsparticles/vue3": "^4.0.0",
     "vue": "^3.5.44",
     "vue-router": "^4.6.4"
   },
@@ -23,8 +25,5 @@
     "vite": "^8.3.5",
     "vite-plugin-vue-devtools": "^8.1.1",
     "vue-tsc": "^3.3.13"
-  },
-  "allowScripts": {
-    "@tsparticles/engine@3.9.1": true
   }
 }
